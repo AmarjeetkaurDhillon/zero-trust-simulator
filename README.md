@@ -3,6 +3,7 @@ Zero Trust Simulator
 A Zero Trust security policy engine that evaluates access requests against 8 configurable security policies, calculates risk scores, and simulates the blast radius of a potential breach if access is granted. Demonstrates the core principles of Zero Trust Architecture — never trust, always verify.
 
 Built as part of MSc Cyber Security — University of Southampton.
+🌐 Live Demo: https://zero-trust-simulator.onrender.com
 
 <img src="dashboard-top.png" width="100%" alt="Zero Trust Simulator Dashboard"/>
 <img src="simulator.png" width="100%" alt="Live Access Simulator"/>
