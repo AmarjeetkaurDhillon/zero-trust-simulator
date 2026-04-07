@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from policy_engine import evaluate_request, calculate_blast_radius, generate_simulation_scenarios, POLICIES
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 
@@ -54,6 +55,5 @@ def get_policies():
     } for p in POLICIES])
 
 if __name__ == "__main__":
-import os
-port = int(os.environ.get("PORT", 5000))
-app.run(host="0.0.0.0", port=port, debug=False)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
